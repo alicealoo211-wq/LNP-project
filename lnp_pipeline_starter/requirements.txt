@@ -1,0 +1,7 @@
+# Python packages this project uses.
+# Install them all at once with:  pip install -r requirements.txt
+
+numpy            # math on lots of numbers
+matplotlib       # graphs
+MDAnalysis       # opens the simulation trajectory files
+pytest           # runs the unit tests (optional but recommended)

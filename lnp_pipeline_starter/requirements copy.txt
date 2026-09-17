@@ -1,0 +1,5 @@
+mdanalysis
+numpy
+pandas
+matplotlib
+jupyter

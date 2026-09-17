@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.pyc
+Miniforge3-Darwin-arm64.sh
+pixelyoursite*
+*.code-workspace
+# big datasets — keep local, never upload
+*.xtc
+*.trr
+Archiv/
