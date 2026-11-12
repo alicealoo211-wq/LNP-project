@@ -17,7 +17,7 @@ from tkinter import ttk
 def clamp(x, lo=0.0, hi=1.0):
     return lo if x < lo else hi if x > hi else x
 
-# i found htis to be a linear interpolation function, which calculates a value between a and b based on the parameter t
+# i found this to be a linear interpolation function, which calculates a value between a and b based on the parameter t
 def lerp(a, b, t):
     return a + (b - a) * t
 
@@ -163,7 +163,7 @@ P = norm((0.5, -0.25, -1.0))
 Q = norm(cross(P, (0, 1, 0)))
 Q2 = cross(P, Q)
 
-#returns  which stage and how har through them
+# returns which stage and how har through them
 def stage_at(t):
     t = clamp(t, 0, TOTAL - 1e-6)
     for i in range(len(STAGES) - 1, -1, -1):
@@ -177,7 +177,7 @@ def stage_at(t):
 # --------------------------------------------------------------------------
 
 class Scene:
-    #interesting and also hard part f creating the memrane grid, myofibrils, LNP lipids, ApoE proteins, LDL receptors, endosome membrane and V-ATPase pumps, protons, and mRNA coiled up inside the LNP
+    #interesting and also hard part of creating the memrane grid, myofibrils, LNP lipids, ApoE proteins, LDL receptors, endosome membrane and V-ATPase pumps, protons, and mRNA coiled up inside the LNP
     def __init__(self):
         rng = random.Random(7)
 
