@@ -21,7 +21,7 @@ def clamp(x, lo=0.0, hi=1.0):
 def lerp(a, b, t):
     return a + (b - a) * t
 
-#based on reddit discussions this is meant make the motion smoother- starts slow accelerates and then slow again
+# based on reddit discussions this is meant make the motion smoother- starts slow accelerates and then slow again
 def ease(t):
     """smooth 0->1 curve (slow start, slow end)."""
     t = clamp(t)
@@ -64,7 +64,7 @@ def mix(c1, c2, t):
     t = clamp(t)
     return (lerp(c1[0], c2[0], t), lerp(c1[1], c2[1], t), lerp(c1[2], c2[2], t))
 
-#tkinter coor formatting
+#tkinter color formatting
 def hexc(c):
     return "#%02x%02x%02x" % tuple(int(clamp(v, 0, 255)) for v in c)
 
